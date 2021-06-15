@@ -1,0 +1,89 @@
+<% include ../layout/header.ejs %>
+<!-- Header End -->
+
+<div id="maincontainer">
+  <!-- Slider Start-->
+  <section class="slider  can-chinh-tren">
+    <div class="container">
+      <div class="flexslider" id="mainslider">
+        <ul class="slides">
+          <li>
+            <img src="img/banner1.jpg" alt="" />
+          </li>
+          <li>
+            <img src="img/banner2.jpg" alt="" />
+          </li>
+          <li>
+            <img src="img/banner3.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Slider End-->
+  
+  <!-- Section Start-->
+  <section class="container otherddetails">
+    <div class="otherddetailspart">
+      <div class="innerclass free">
+        <h2>Free shipping</h2>
+        All over in world over $200 </div>
+    </div>
+    <div class="otherddetailspart">
+      <div class="innerclass payment">
+        <h2>Easy Payment</h2>
+        Payment Gatway support </div>
+    </div>
+    <div class="otherddetailspart">
+      <div class="innerclass shipping">
+        <h2>24hrs Shipping</h2>
+        Free For UK Customers </div>
+    </div>
+    <div class="otherddetailspart">
+      <div class="innerclass choice">
+        <h2>Over 5000 Choice</h2>
+        50,000+ Products </div>
+    </div>
+  </section>
+  <!-- Section End-->
+  
+  <!-- Featured Product-->
+   <%   cate.forEach(function(ca){ var id = 0; %>
+      <section id="featured" class="row mt40">
+        <div class="container">
+         
+          <h1 class="heading1"><span class="maintext"> <%= ca.name%> </span><a href="/cate/<%= ca.nameKhongDau %>.<%= ca._id%>.html"" >More</a></h1>
+          
+          <ul class="thumbnails">
+            <%  product.forEach(function(pro){ if(id < 100) { if(pro.cateId == ca._id){ id ++ ; %>
+
+                  <li class="span3">
+                    <a class="prdocutname" href="product.html"> <%= pro.name %> </a>
+                    <div class="thumbnail">
+                      <span class=" tooltip-test"></span>
+                      <a href="/chi-tiet/<%= pro.nameKhongDau%>.<%= pro._id%>.<%= pro.cateId%>.html"><img alt="" src="upload/<%= pro.img %>"></a>
+                      <div class="pricetag">
+                        <span class="spiral"></span><a href="/add-cart.<%= pro._id %>" class="productcart">ADD TO CART</a>
+                        <div class="price">
+                          <div class="pricenew"><%= pro.price %>đ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+            <% }}})%>
+           
+          </ul>
+          
+        </div>
+      </section>
+  <% })%>
+  <!-- Latest Product-->
+
+
+<!-- Footer -->
+<% include ../layout/footer.ejs %>
+
+<script src="TT_Admin/assets/plugins/datatables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="TT_Admin/assets/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
+<script src="TT_Admin/assets/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+<script src="TT_Admin/assets/plugins/datatables/extensions/Responsive/bootstrap/3/dataTables.bootstrap.js" type="text/javascript"></script>
