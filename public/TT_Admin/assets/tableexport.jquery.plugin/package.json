@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      "tableexport.jquery.plugin@1.10.26",
+      "D:\\DO_AN_CNPM\\Web-Shopping"
+    ]
+  ],
+  "_from": "tableexport.jquery.plugin@1.10.26",
+  "_id": "tableexport.jquery.plugin@1.10.26",
+  "_inBundle": false,
+  "_integrity": "sha512-e9eZTXeKErYj2euYB130VhFDMvDHO6edkEQkMheu6huTrf7XkOjs93Q/ryeryEtjEfaa//45PfJDui63PGPf9Q==",
+  "_location": "/tableexport.jquery.plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "tableexport.jquery.plugin@1.10.26",
+    "name": "tableexport.jquery.plugin",
+    "escapedName": "tableexport.jquery.plugin",
+    "rawSpec": "1.10.26",
+    "saveSpec": null,
+    "fetchSpec": "1.10.26"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/tableexport.jquery.plugin/-/tableexport.jquery.plugin-1.10.26.tgz",
+  "_spec": "1.10.26",
+  "_where": "D:\\DO_AN_CNPM\\Web-Shopping",
+  "author": {
+    "name": "hhurz"
+  },
+  "bugs": {
+    "url": "https://github.com/hhurz/tableExport.jquery.plugin/issues"
+  },
+  "dependencies": {
+    "es6-promise": ">=4.2.4",
+    "file-saver": ">=1.2.0",
+    "html2canvas": ">=0.5.0-beta4",
+    "jquery": ">=1.9.1",
+    "jspdf": ">=1.3.4",
+    "jspdf-autotable": "2.0.14 || 2.0.17",
+    "pdfmake": "^0.1.71",
+    "xlsx": ">=0.12.5"
+  },
+  "description": "html table export",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "tableExport.min.js",
+    "libs"
+  ],
+  "homepage": "https://github.com/hhurz/tableExport.jquery.plugin/",
+  "keywords": [
+    "html5",
+    "javascript",
+    "jquery",
+    "export",
+    "table"
+  ],
+  "license": "MIT",
+  "main": "tableExport.min.js",
+  "name": "tableexport.jquery.plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhurz/tableExport.jquery.plugin.git"
+  },
+  "version": "1.10.26"
+}
