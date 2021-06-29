@@ -461,7 +461,7 @@ a.tweet_avatar { margin:5px 5px 5px 0; float:left }
 #footersocial a.flickr:hover { background-position:-309px -47px }
 /*Copyright Bottom*/
 .copyrightbottom { background:#303030; padding:15px 0; color:#969ba4 }
-#gotop { position:fixed; bottom:2px; right:5px; height:58px; width:58px; background:url(../img/gotop.png) no-repeat 0 0; display:block; text-indent:-9999px; overflow:hidden }
+#gotop { position:fixed; bottom:2px; right:5px; height:58px; width:58px; display:block; text-indent:-9999px; overflow:hidden }
 .the-icons li {display:inline-block; width:22%; padding:10px 0}
  @media (max-width: 1200px) {
 .headerdetails {

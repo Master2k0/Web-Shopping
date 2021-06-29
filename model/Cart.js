@@ -6,6 +6,7 @@ var Cart = new Schema({
   name 		:  String,
   email 	: String,
   sdt 		: String,
+  diachi : String,
   msg 		: String,
   cart 		: Object,
   st 		: Number

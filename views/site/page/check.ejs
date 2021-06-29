@@ -31,21 +31,27 @@
           <form class="form-horizontal " action="" method="post">
             <fieldset>
               <div class="control-group">
-                <label for="name" class="control-label">Name <span class="required">*</span></label>
+                <label for="name" class="control-label">Name </label>
                 <div class="controls">
-                  <input type="text"  class="required" id="name" value="" name="name">
+                  <input type="text"  class="required" id="name" value="" name="name" required>
                 </div>
               </div>
               <div class="control-group">
-                <label for="email" class="control-label">Email <span class="required">*</span></label>
+                <label for="email" class="control-label">Email </label>
                 <div class="controls">
-                  <input type="email"  class="required email" id="email" value="" name="email">
+                  <input type="email"  class="required email" id="email" value="" name="email" required>
                 </div>
               </div>
               <div class="control-group">
                 <label for="url" class="control-label">Phone</label>
                 <div class="controls">
-                  <input type="text" id="phone" value="" name="phone">
+                  <input type="tel" id="phone" value="" name="phone" placeholder="0xx3569874" pattern="[0-9]{10}" required>
+                </div>
+              </div>
+              <div class="control-group">
+                <label for="address" class="control-label">Address</label>
+                <div class="controls">
+                  <input class="required" id="address" name="address" required> </input>
                 </div>
               </div>
               <div class="control-group">

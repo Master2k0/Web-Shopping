@@ -50,9 +50,10 @@ router.post('/dat-hang.html', function (req, res) {
 	var data = giohang.convertArray();
 	
 	var cart = new Cart({
-		  name 		:  req.body.name,
+		  name 		: req.body.name,
 		  email 	: req.body.email,
 		  sdt 		: req.body.phone,
+		  diachi    : req.body.address,
 		  msg 		: req.body.message,
 		  cart 		: data,
 		  st 		: 0

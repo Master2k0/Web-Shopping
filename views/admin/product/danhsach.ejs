@@ -45,6 +45,8 @@
                                                     <th>ID</th>
                                                     <th>Name</th>
                                                     <th>Hình</th>
+                                                    <th>Giá</th>
+                                                    <th>Thông tin chi tiết</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -55,9 +57,10 @@
                                                     <td><%= id%></td>
                                                     <td><%= item.name%></td>
                                                     <td> <img src="upload/<%= item.img%>" width="100px" alt=""></td>
-
+                                                    <td> <%= item.price%></td>
+                                                    <td><%= item.des%></td>
                                                     <td>
-                                                        <a href="/admin/product/<%= item._id %>/xoa-product.html">Xoá</a> | 
+                                                        <a href="/admin/product/<%= item._id %>/xoa-product.html">Xoá </a>| 
                                                         <a href="/admin/product/<%= item._id %>/sua-product.html">Sửa</a>
                                                     </td>
                                                 </tr>
