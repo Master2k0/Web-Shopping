@@ -52,7 +52,7 @@
                                             <label class="form-label" for="field-120334">Name</label>
                                             <span class="desc"></span>
                                             <div class="controls">
-                                                <input type="text" id="name" value="<%= product.name%>" class="form-control" name="name">
+                                                <input type="text" id="name" value="<%= product.name%>" class="form-control" name="name" required>
                                             </div>
                                         </div>
                                     </div>
@@ -62,7 +62,7 @@
                                             <span class="desc"></span><br/>
                                             <img src="upload/<%= product.img%>" width="200px">
                                             <div class="controls">
-                                                <input type="file" id="hinh" value="aaaa" required="required" class="form-control" name="hinh">
+                                                <input type="file" id="hinh" value="aaaa" required="required" class="form-control" name="hinh" required>
                                             </div>
                                         </div>
                                     </div>
@@ -71,7 +71,7 @@
                                             <label class="form-label" for="field-120334">Giá</label>
                                             <span class="desc"></span>
                                             <div class="controls">
-                                                <input type="number" id="gia" value="<%= product.price%>" min="0" class="form-control" name="gia">
+                                                <input type="number" id="gia" value="<%= product.price%>" min="0" class="form-control" name="gia" required>
                                             </div>
                                         </div>
                                     </div>
@@ -81,7 +81,7 @@
                                             <label class="form-label" for="field-120334">Thể Loại</label>
                                             <span class="desc"></span>
                                             <div class="controls">
-                                                <select class="form-control" id="cate" name="cate">
+                                                <select class="form-control" id="cate" name="cate" required>
                                                     <% cate.forEach(function(item){ %> 
                                                         <option value="<%= item._id%>" <%= (item._id == product.cateId) ? 'selected=\"selected\"' : ''%> ><%= item.name%></option>
                                                     <%})%>
