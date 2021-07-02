@@ -32,4 +32,4 @@
 
 **Ví dụ**
 
-`mongodump -d shopping -o D:\DO_AN_CNPM\WebBanHangBangNodeJs-master\DataBase\data`
+`mongodump -d shopping -o D:\DO_AN_CNPM\Shopping_web\DataBase\data\`
