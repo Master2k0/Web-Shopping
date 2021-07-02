@@ -15,4 +15,4 @@ Các bước export data vào folder
 3. Gõ vào command: mongodump -d db_name -o /path/
 	- Với db_name: là tên bạn muốn đặt cho database (Ở đây tôi sẽ đặt là shopping)
 	- Với path: là đường dẫn đến folder muốn lưu
-	Ví dụ: mongodump -d shopping -o D:\DO_AN_CNPM\WebBanHangBangNodeJs-master\DataBase\data
+	Ví dụ: mongodump -d shopping -o D:\DO_AN_CNPM\Shopping_web\DataBase\data\ 
