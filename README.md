@@ -13,8 +13,8 @@
 ## Manual
 
 ### Import data to MongoDB on Windows
-1. Cài mongodb community server
-2. Mongodb database tools
+1. Cài Mongodb community server
+2. Cài Mongodb database tools
 3. Gõ vào command: `mongorestore -d db_name /path/`
 	- Với `db_name`: là tên bạn muốn đặt cho database (Ở đây tôi sẽ đặt là shopping)
 	- Với `path`: là đường dẫn đến data
