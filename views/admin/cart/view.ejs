@@ -67,8 +67,10 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <% var id = 0; var total = 30000 %>
-                                                <% cart.cart.forEach(function(item){ id ++; total += item.tien;%>
+                                                <% var id = 0; 
+                                                   var ship = 30000;
+                                                   var total = 0 %>
+                                                <% cart.cart.forEach(function(item){ id ++; total += item.tien;%>                                                
                                                 <tr>
                                                     <td><%= id%></td>
                                                     <td><%= item.item.name%></td>
@@ -77,6 +79,9 @@
                                                     <td><%= item.tien%>đ</td>
                                                 </tr>
                                                 <%})%>
+                                                <% if(total < 500000){ total += ship}
+                                                    else{ship = 0}
+                                                %>
                                                 <tr>
                                                     <td colspan="5">
                                                         <% if(cart.st == 0){ %>
@@ -89,7 +94,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="5">
-                                                        <p><strong>Phí Ship: </strong> 30000đ</p>
+                                                        <p><strong>Phí Ship: </strong><%= ship%> đ</p>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -124,7 +129,9 @@
                                                 </tr>
                                             </thead>
                                             <tbody style="display: none">
-                                                <% var id = 0; var total = 30000 %>
+                                                <% var id = 0;
+                                                 var ship = 30000;
+                                                 var total = 0 %>
                                                 <% cart.cart.forEach(function(item){ id ++; total += item.tien;%>
                                                 <tr>
                                                     <td><%= id%></td>
@@ -134,9 +141,12 @@
                                                     <td><%= item.tien%>đ</td>
                                                 </tr>
                                                 <%})%>
+                                                <% if(total < 500000){ total += ship}
+                                                   else{ship = 0}
+                                                %>
                                                 <tr>
                                                     <td colspan="5">
-                                                        <p><strong>Phí Ship: </strong> 30000đ</p>
+                                                        <p><strong>Phí Ship: </strong> <%=ship %>đ</p>
                                                     </td>
                                                 </tr>
                                                 <tr>

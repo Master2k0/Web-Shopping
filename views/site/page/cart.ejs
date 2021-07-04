@@ -12,7 +12,7 @@
         </li>
         <li class="active"> Shopping Cart</li>
       </ul>       
-      <h1 class="heading1"><span class="maintext"> Shopping Cart</span><span class="subtext"> All items in your  Shopping Cart</span></h1>
+      <h1 class="heading1"><span class="maintext"> Shopping Cart</span><span class="subtext"> Hóa đơn > 500000đ Free Ship, Nhỏ hơn 500000đ Ship 30k</span></h1>
       <!-- Cart-->
       <div class="cart-info">
         <table class="table table-striped table-bordered">
@@ -25,7 +25,11 @@
             <th class="total">Tiền</th>
            
           </tr>
-          <% var total = 30000; if(data){ data.forEach(function(item){ total += item.tien %>
+          <% var total = 0; 
+             var ship = 30000;
+             if(data){ 
+               data.forEach(function(item){ 
+                 total += item.tien %>
           <tr>
             <td class="image"><a href="/chi-tiet/<%= item.item.nameKhongDau%>.<%= item.item._id%>.<%= item.item.cateId%>.html"><img title="product" alt="product" src="upload/<%= item.item.img%>" height="50" width="50"></a></td>
             <td  class="name"><a href="/chi-tiet/<%= item.item.nameKhongDau%>.<%= item.item._id%>.<%= item.item.cateId%>.html"><%= item.item.name%></a></td>
@@ -39,7 +43,10 @@
             <td class="total"><%= item.tien%> đ</td>
              
           </tr>
-          <%})}%>
+          <%})}
+              if(total < 500000){ total += ship}
+              else{ship = 0}
+                %>
 
         </table>
       </div>
@@ -49,7 +56,7 @@
             <table class="table table-striped table-bordered ">
               <tr>  
                 <td><span class="extra bold totalamout">Fee Ship :</span></td>
-                <td><span class="bold totalamout">30000 đ</span></td>
+                <td><span class="bold totalamout"><%= ship%> đ</span></td>
               </tr>
               <tr>
                 <td><span class="extra bold totalamout">Total :</span></td>
