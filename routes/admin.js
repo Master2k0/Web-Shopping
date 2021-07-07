@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 var Cate = require('../model/Cate.js');
-
+var Cart = require('../model/Cart.js');
 var User = require('../model/User.js');
-
+var Product = require('../model/Product.js');
 var bcrypt = require('bcryptjs');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
@@ -28,6 +28,8 @@ function bodauTiengViet(str) {
 router.get('/', checkAdmin, function(req, res, next) {
   res.render('admin/main/index');
 });
+
+
 
 router.get('/dang-nhap.html', function(req, res, next) {
   res.render('admin/login/index');

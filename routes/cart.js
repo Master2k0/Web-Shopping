@@ -28,7 +28,7 @@ router.get('/:id/thanh-toan-cart.html',checkAdmin, function(req, res, next) {
  	Cart.findById(id, function(err, data){
  		data.st = 1;
  		data.save();
- 		req.flash('success_msg', 'Đã Thêm Thành Công');
+ 		req.flash('success_msg', 'Đã Thanh Toán Thành Công');
 		res.redirect('/admin/cart/'+id+'/xem-cart.html'); 
  		
  	});
