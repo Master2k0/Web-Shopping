@@ -32,4 +32,18 @@
 
 **Ví dụ**
 
+### Run application
+1. Install nodejs
+- Because our application is written using Javascript, you must install Nodejs in order to run it.
+- Go to https://nodejs.org to download and install it following the instructions.
+2. Run code
+- Clone our source code
+	git clone <URL>
+- Install package for application
+	npm install
+- Start application
+	npm start
+- Go to localhost:3000 to use our application
+
+
 `mongodump -d shopping -o D:\DO_AN_CNPM\Shopping_web\DataBase\data\`
