@@ -32,6 +32,8 @@
 
 **Ví dụ**
 
+`mongodump -d shopping -o D:\DO_AN_CNPM\Shopping_web\DataBase\data\`
+
 ### Run application
 1. Install nodejs
 - Because our application is written using Javascript, you must install Nodejs in order to run it.
@@ -46,4 +48,4 @@
 - Go to localhost:3000 to use our application
 
 
-`mongodump -d shopping -o D:\DO_AN_CNPM\Shopping_web\DataBase\data\`
+
