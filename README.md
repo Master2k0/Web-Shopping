@@ -40,12 +40,12 @@
 - Go to https://nodejs.org to download and install it following the instructions.
 2. Run code
 - Clone our source code
-	git clone <URL>
+	`git clone <URL>`
 - Install package for application
-	npm install
+	`npm install`
 - Start application
-	npm start
-- Go to localhost:3000 to use our application
+	`npm start`
+- Go to `localhost:3000` to use our application
 
 
 
