@@ -111,7 +111,7 @@
       $.ajax({
         type: 'POST',
         url: /\?dev/.test(window.location)
-          ? 'https://segroup7.eastus.cloudapp.azure.com'
+          ? 'http://localhost:3000'
           : 'http://bootstrap.herokuapp.com',
         dataType: 'jsonpi',
         params: {
