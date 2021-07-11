@@ -10,6 +10,10 @@
 | Nguyễn Chí Vỹ       | 18521681@gm.uit.edu.vn |
 | Nguyễn Minh Quang   | 18521299@gm.uit.edu.vn |
 
+## Live Demo
+
+👉 https://segroup7.eastus.cloudapp.azure.com/ 👈
+
 ## Manual
 
 ### Import data to MongoDB on Windows
